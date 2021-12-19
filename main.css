@@ -1,0 +1,40 @@
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+   text-decoration: none; 
+   color: black;
+   background-color: brown;
+   padding: 5px;
+   border-radius: 50%;
+}
+
+main{
+    background: url("cat.jpg");
+    width: 98vw;
+    height: 97vh;
+    background-size: cover;
+    color: whitesmoke;
+    margin-left: -7px;
+}
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  
+  html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
